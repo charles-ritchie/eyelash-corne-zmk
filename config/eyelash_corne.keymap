@@ -102,9 +102,9 @@
         display-name = "QWERTY";
         bindings = <
 
-          &kp CAPS &kp Q          &kp W          &kp E           &kp R            &kp T                  &kp UP                &kp Y &kp U            &kp I           &kp O          &kp P            &none
-          &none    &lt_nrm LGUI A &lt_slw LALT S &lt_nrm LCTRL D &lt_fst LSHIFT F &kp G         &kp LEFT &kp ENTER &kp RIGHT   &kp H &lt_fst RSHIFT J &lt_nrm RCTRL K &lt_slw RALT L &lt_nrm RGUI SQT &none
-          &none    &kp Z          &kp X          &kp C           &kp V            &kp B   &kp C_MUTE     &kp DOWN              &kp N &kp M            &kp COMMA       &kp DOT        &kp FSLH         &none
+          &kp CAPS &kp Q          &kp W          &kp E           &kp R            &kp T                  &mmv MOVE_UP                     &kp Y &kp U            &kp I           &kp O          &kp P            &none
+          &none    &lt_nrm LGUI A &lt_slw LALT S &lt_nrm LCTRL D &lt_fst LSHIFT F &kp G   &mmv MOVE_LEFT &mkp LCLK      &mmv MOVE_RIGHT   &kp H &lt_fst RSHIFT J &lt_nrm RCTRL K &lt_slw RALT L &lt_nrm RGUI SQT &none
+          &none    &kp Z          &kp X          &kp C           &kp V            &kp B   &kp C_MUTE     &mmv MOVE_DOWN                   &kp N &kp M            &kp COMMA       &kp DOT        &kp FSLH         &none
 
                                                       &lt 2 ESC  &lt 1 SPACE  &lt TAB 6                                                   &lt 4 ENTER  &lt 3 BSPC  &lt 5 DEL
           >;
