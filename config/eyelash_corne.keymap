@@ -102,7 +102,7 @@
           &none    &mt_nrm LGUI A &mt_slw LALT S &mt_nrm LCTRL D &mt_fst LSHIFT F &kp G         &kp LEFT &kp ENTER &kp RIGHT   &kp H &mt_fst RSHIFT J &mt_nrm RCTRL K &mt_slw RALT L &mt_nrm RGUI SQT &none
           &none    &kp Z          &kp X          &kp C           &kp V            &kp B   &kp C_MUTE     &kp DOWN              &kp N &kp M            &kp COMMA       &kp DOT        &kp FSLH         &none
 
-                                                        &lt 2 ESC  &lt 1 SPACE  &kp TAB                                        &lt 4 ENTER  &lt 3 BSPC  &lt 6 DEL
+                                                        &lt 2 ESC  &lt 1 SPACE  &kp TAB                                        &lt 4 ENTER  &lt 3 BSPC  &lt 5 DEL
           >;
 
         sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
