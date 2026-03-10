@@ -102,7 +102,7 @@
           &none    &lt_nrm LGUI A &lt_slw LALT S &lt_nrm LCTRL D &lt_fst LSHIFT F &kp G         &kp LEFT &kp ENTER &kp RIGHT   &kp H &lt_fst RSHIFT J &lt_nrm RCTRL K &lt_slw RALT L &lt_nrm RGUI SQT &none
           &none    &kp Z          &kp X          &kp C           &kp V            &kp B   &kp C_MUTE     &kp DOWN              &kp N &kp M            &kp COMMA       &kp DOT        &kp FSLH         &none
 
-                                                        &lt 2 ESC  &lt 1 SPACE  &kp TAB                                        &lt 4 ENTER  &lt 3 BSPC  &lt 5 DEL
+                                                      &lt 2 ESC  &lt 1 SPACE  &lt TAB 6                                                   &lt 4 ENTER  &lt 3 BSPC  &lt 5 DEL
           >;
 
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -173,6 +173,23 @@
           &none &kp F10 &kp F1 &kp F2 &kp F3 &none    &trans       &trans         &none &none      &none     &none    &none    &none
 
                                &none  &none  &none                                &none  &none  &none
+
+          >;
+
+        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+      };
+
+    };
+
+    bluetooth_layer {
+        display-name = "BLUETOOTH";
+        bindings = <
+
+          &none &none &none &none &none &none                &trans          &none &none &bt BT_CLR   &bt BT_CLR_ALL &none        &none
+          &none &none &none &none &none &none         &trans &trans &trans   &none &none &bt BT_SEL 4 &bt BT_SEL 5   &none        &none
+          &none &none &none &none &none &none    &trans       &trans         &none &none &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2 &none
+
+                          &none  &none  &none                                &none  &out OUT_USB  &out OUT_BLE
 
           >;
 
