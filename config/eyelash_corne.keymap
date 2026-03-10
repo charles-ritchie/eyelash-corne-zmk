@@ -37,7 +37,7 @@
          *
          * Everything else uses a normal 200ms-ish mod-tap.
          */
-        mt_nrm: mt_nrm {
+        lt_nrm: layer_tap_normal {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_NORM";
             #binding-cells = <2>;
@@ -47,7 +47,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        mt_fst: mt_fst {
+        lt_fst: layer_tap_fast {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_SHIFT_FAST";
             #binding-cells = <2>;
@@ -57,7 +57,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        mt_slw: mt_slw {
+        lt_slw: layer_tap_slow {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_ALT_SLOW";
             #binding-cells = <2>;
@@ -99,7 +99,7 @@
         bindings = <
 
           &kp CAPS &kp Q          &kp W          &kp E           &kp R            &kp T                  &kp UP                &kp Y &kp U            &kp I           &kp O          &kp P            &none
-          &none    &mt_nrm LGUI A &mt_slw LALT S &mt_nrm LCTRL D &mt_fst LSHIFT F &kp G         &kp LEFT &kp ENTER &kp RIGHT   &kp H &mt_fst RSHIFT J &mt_nrm RCTRL K &mt_slw RALT L &mt_nrm RGUI SQT &none
+          &none    &lt_nrm LGUI A &lt_slw LALT S &lt_nrm LCTRL D &lt_fst LSHIFT F &kp G         &kp LEFT &kp ENTER &kp RIGHT   &kp H &lt_fst RSHIFT J &lt_nrm RCTRL K &lt_slw RALT L &lt_nrm RGUI SQT &none
           &none    &kp Z          &kp X          &kp C           &kp V            &kp B   &kp C_MUTE     &kp DOWN              &kp N &kp M            &kp COMMA       &kp DOT        &kp FSLH         &none
 
                                                         &lt 2 ESC  &lt 1 SPACE  &kp TAB                                        &lt 4 ENTER  &lt 3 BSPC  &lt 5 DEL
