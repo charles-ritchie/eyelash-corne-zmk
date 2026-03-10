@@ -70,6 +70,13 @@
             quick-tap-ms = <0>;
             bindings = <&kp>, <&kp>;
         };
+
+        my_caps_word: caps_word {
+            compatible = "zmk,behavior-caps-word";
+            #binding-cells = <0>;
+            // Add MINUS and UNDERSCORE to the list of non-breaking keys
+            continue-list = <UNDERSCORE MINUS BACKSPACE>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -92,6 +99,12 @@
         softoff {
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
+        };
+
+        combo_caps_word {
+            timeout-ms = <50>;
+            key-positions = <17 23>;
+            bindings = <&my_caps_word>;
         };
     };
 
