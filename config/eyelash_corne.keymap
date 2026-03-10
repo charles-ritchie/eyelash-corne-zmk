@@ -63,7 +63,7 @@
             hold-trigger-on-release;
         };
 
-        ms_lft: mod_tap_left {
+        ms_lft: mod_shift_tap_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
