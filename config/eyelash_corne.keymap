@@ -28,7 +28,7 @@
 
 &mt {
     quick-tap-ms = <150>;
-}
+};
 
 &soft_off { hold-time-ms = <2000>; };
 
