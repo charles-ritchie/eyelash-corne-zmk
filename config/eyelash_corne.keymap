@@ -26,6 +26,10 @@
     trigger-period-ms = <16>;
 };
 
+&mt {
+    quick-tap-ms = <150>;
+}
+
 &soft_off { hold-time-ms = <2000>; };
 
  / {
