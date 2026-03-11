@@ -27,7 +27,8 @@
 };
 
 &lt {
-    quick-tap-ms = <180>;
+    tapping-term-ms = <150>;
+    quick-tap-ms = <140>;
 };
 
 &soft_off { hold-time-ms = <2000>; };
