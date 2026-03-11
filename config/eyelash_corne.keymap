@@ -42,7 +42,7 @@
          *
          * Everything else uses a normal 200ms-ish mod-tap.
          */
-        mt_lft: mod_tap_left {
+        mtl: mod_tap_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -53,7 +53,7 @@
             hold-trigger-on-release;
         };
 
-        mt_rgt: mod_tap_right {
+        mtr: mod_tap_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -64,7 +64,7 @@
             hold-trigger-on-release;
         };
 
-        ms_lft: mod_shift_tap_left {
+        msl: mod_shift_tap_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
@@ -75,7 +75,7 @@
             hold-trigger-on-release;
         };
 
-        ms_rgt: mod_shift_tap_right {
+        msr: mod_shift_tap_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
@@ -130,11 +130,11 @@
         display-name = "QWERTY";
         bindings = <
 
-          &mo 6 &kp Q          &kp W          &kp E           &kp R            &kp T                  &mmv MOVE_UP                     &kp Y &kp U            &kp I           &kp O          &kp P            &kp CAPS
-          &none &mt_lft LGUI A &mt_lft LALT S &mt_lft LCTRL D &ms_lft LSHIFT F &kp G   &mmv MOVE_LEFT &mkp LCLK      &mmv MOVE_RIGHT   &kp H &ms_rgt RSHIFT J &mt_rgt RCTRL K &mt_rgt RALT L &mt_rgt RGUI SQT &none
-          &none &kp Z          &kp X          &kp C           &kp V            &kp B   &kp C_MUTE     &mmv MOVE_DOWN                   &kp N &kp M            &kp COMMA       &kp DOT        &kp FSLH         &none
+          &mo 6 &kp Q       &kp W       &kp E        &kp R         &kp T                  &mmv MOVE_UP                     &kp Y &kp U         &kp I        &kp O       &kp P         &kp CAPS
+          &mo 7 &mtl LGUI A &mtl LALT S &mtl LCTRL D &msl LSHIFT F &kp G   &mmv MOVE_LEFT &mkp LCLK      &mmv MOVE_RIGHT   &kp H &msr RSHIFT J &mtr RCTRL K &mtr RALT L &mtr RGUI SQT &none
+          &none &kp Z       &kp X       &kp C        &kp V         &kp B   &kp C_MUTE     &mmv MOVE_DOWN                   &kp N &kp M         &kp COMMA    &kp DOT     &kp FSLH      &none
 
-                                                     &lt 2 ESC  &lt 1 SPACE  &kp TAB                                                   &lt 4 ENTER  &lt 3 BSPC  &lt 5 DEL
+                                         &lt 2 ESC  &lt 1 SPACE  &kp TAB                                                   &lt 4 ENTER  &lt 3 BSPC  &lt 5 DEL
           >;
 
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -158,9 +158,9 @@
         display-name = "MEDIA";
         bindings = <
 
-          &none &none    &none    &none     &none      &none                 &trans          &rgb_ug RGB_TOG &rgb_ug RGB_EFF &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_BRD
-          &none &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none          &trans &trans &trans   &none           &kp C_PREV      &kp C_VOL_DN    &kp C_VOL_UP    &kp C_NEXT      &none
-          &none &none    &none    &none     &none      &none    &trans       &trans          &none           &none           &none           &none           &none           &none
+          &none &none    &none    &none     &none      &none                 &trans          &none &none      &none        &none        &none      &none
+          &none &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none          &trans &trans &trans   &none &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &none
+          &none &none    &none    &none     &none      &none    &trans       &trans          &none &none      &none        &none        &none      &none
 
                                          &none  &none  &none                                 &kp C_STOP  &kp C_PP  &kp C_MUTE
           >;
