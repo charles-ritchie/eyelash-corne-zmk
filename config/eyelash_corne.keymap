@@ -27,8 +27,8 @@
 };
 
 &lt {
-    tapping-term-ms = <180>;
-    quick-tap-ms = <160>;
+    tapping-term-ms = <150>;
+    quick-tap-ms = <140>;
 };
 
 &soft_off { hold-time-ms = <2000>; };
@@ -134,7 +134,7 @@
           &mo 6 &mtl LGUI A &mtl LALT S &mtl LCTRL D &kp F &kp G   &mmv MOVE_LEFT &mkp LCLK      &mmv MOVE_RIGHT   &kp H &kp J &mtr RCTRL K &mtr RALT L &mtr RGUI SQT &none
           &none &kp Z       &kp X       &kp C        &kp V &kp B   &kp C_MUTE     &mmv MOVE_DOWN                   &kp N &kp M &kp COMMA    &kp DOT     &kp FSLH      &none
 
-                          &lt 4 ESC  &msl LSHIFT SPACE &lt 3 TAB                                                   &lt 1 ENTER &msr RSHIFT BSPC  &lt 2 DEL
+                                         &lt 4 ESC  &lt 3 SPACE  &msl LSHIFT TAB                                   &msr RSHIFT ENTER  &lt 1 BSPC  &lt 2 DEL
           >;
 
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
