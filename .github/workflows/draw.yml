@@ -1,5 +1,7 @@
 name: Draw Keymap
+
 on:
+  workflow_call:
   workflow_dispatch:
   push:
     paths:
