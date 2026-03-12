@@ -134,7 +134,7 @@
           &mo 6 &mtl LGUI A &mtl LALT S &mtl LCTRL D &kp F &kp G   &mmv MOVE_LEFT &mkp LCLK      &mmv MOVE_RIGHT   &kp H &kp J &mtr RCTRL K &mtr RALT L &mtr RGUI SQT &none
           &none &kp Z       &kp X       &kp C        &kp V &kp B   &kp C_MUTE     &mmv MOVE_DOWN                   &kp N &kp M &kp COMMA    &kp DOT     &kp FSLH      &none
 
-                         &msl LSHIFT ESC  &lt 3 SPACE  &lt 4 TAB                                                   &lt 2 ENTER  &lt 1 BSPC  &msr RSHIFT DEL
+                         &lt 4 ESC  &lt 3 SPACE  &msl LSHIFT TAB                                                   &msr RSHIFT ENTER  &lt 1 BSPC  &lt 2 DEL
           >;
 
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
