@@ -130,11 +130,11 @@
         display-name = "QWERTY";
         bindings = <
 
-          &mo 6 &kp Q       &kp W       &kp E        &kp R         &kp T                  &mmv MOVE_UP                     &kp Y &kp U         &kp I        &kp O       &kp P         &kp CAPS
-          &mo 7 &mtl LGUI A &mtl LALT S &mtl LCTRL D &msl LSHIFT F &kp G   &mmv MOVE_LEFT &mkp LCLK      &mmv MOVE_RIGHT   &kp H &msr RSHIFT J &mtr RCTRL K &mtr RALT L &mtr RGUI SQT &none
+          &mo 5 &kp Q       &kp W       &kp E        &kp R         &kp T                  &mmv MOVE_UP                     &kp Y &kp U         &kp I        &kp O       &kp P         &kp CAPS
+          &mo 6 &mtl LGUI A &mtl LALT S &mtl LCTRL D &msl LSHIFT F &kp G   &mmv MOVE_LEFT &mkp LCLK      &mmv MOVE_RIGHT   &kp H &msr RSHIFT J &mtr RCTRL K &mtr RALT L &mtr RGUI SQT &none
           &none &kp Z       &kp X       &kp C        &kp V         &kp B   &kp C_MUTE     &mmv MOVE_DOWN                   &kp N &kp M         &kp COMMA    &kp DOT     &kp FSLH      &none
 
-                                         &lt 2 ESC  &lt 1 SPACE  &kp TAB                                                   &lt 4 ENTER  &lt 3 BSPC  &lt 5 DEL
+                                         &lt 2 ESC  &lt 1 SPACE  &kp TAB                                                   &kp ENTER  &lt 3 BSPC  &lt 4 DEL
           >;
 
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -177,20 +177,6 @@
           &none &kp GRAVE &kp N1 &kp N2 &kp N3 &kp BSLH    &trans       &trans          &none &none      &none     &none    &none    &none
 
                               &kp DOT  &kp N0  &kp MINUS                                &none  &none  &none
-          >;
-
-        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-      };
-
-      sym_layer {
-        display-name = "SYM";
-        bindings = <
-
-          &none &kp LBRC  &kp AMPS &kp ASTRK &kp LPAR  &kp RBRC                 &trans          &none &none      &none     &none    &none    &none
-          &none &kp SEMI  &kp DLLR &kp PRCNT &kp CARET &kp EQUAL         &trans &trans &trans   &none &kp RSHIFT &kp RCTRL &kp RALT &kp RGUI &none
-          &none &kp GRAVE &kp EXCL &kp AT    &kp HASH  &kp BSLH    &trans       &trans          &none &none      &none     &none    &none    &none
-
-                                      &kp DOT &kp RPAR &kp MINUS                                &none  &none  &none
           >;
 
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
