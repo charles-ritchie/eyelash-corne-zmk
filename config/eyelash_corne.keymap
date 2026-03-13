@@ -75,7 +75,7 @@
             hold-trigger-on-release;
         };
 
-        mtr: mod_shift_right {
+        msr: mod_shift_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
