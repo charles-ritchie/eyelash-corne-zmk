@@ -64,7 +64,29 @@
             hold-trigger-on-release;
         };
 
-        msl: mod_shift_tap_left {
+        msl: mod_shift_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <180>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <7 8 9 10 11 22 23 24 25 26 36 37 38 39 40 43 45 46 47>;
+            hold-trigger-on-release;
+        };
+
+        mtr: mod_shift_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <180>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <1 2 3 4 5 14 15 16 17 18 29 30 31 32 33 42 43 44>;
+            hold-trigger-on-release;
+        };
+
+        mslt: mod_shift_left_thumb {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -117,11 +139,11 @@
         display-name = "QWERTY";
         bindings = <
 
-          &mo 6      &kp Q       &kp W       &kp E        &kp R &kp T                  &mmv MOVE_UP                     &kp Y &kp U &kp I        &kp O       &kp P         &kp CAPS
-          &kp LSHIFT &mtl LGUI A &mtl LALT S &mtl LCTRL D &kp F &kp G   &mmv MOVE_LEFT &mkp LCLK      &mmv MOVE_RIGHT   &kp H &kp J &mtr RCTRL K &mtr RALT L &mtr RGUI SQT &kp RSHIFT
-          &mo 7      &kp Z       &kp X       &kp C        &kp V &kp B   &kp C_MUTE     &mmv MOVE_DOWN                   &kp N &kp M &kp COMMA    &kp DOT     &kp FSLH      &none
+          &mo 6 &kp Q       &kp W       &kp E        &kp R         &kp T                  &mmv MOVE_UP                &kp Y &kp U         &kp I        &kp O       &kp P         &kp CAPS
+          &mo 7 &mtl LGUI A &mtl LALT S &mtl LCTRL D &msl LSHIFT F &kp G   &mmv MOVE_LEFT &mkp LCLK &mmv MOVE_RIGHT   &kp H &msr RSHIFT J &mtr RCTRL K &mtr RALT L &mtr RGUI SQT &none
+          &none &kp Z       &kp X       &kp C        &kp V         &kp B   &kp C_MUTE     &mmv MOVE_DOWN              &kp N &kp M         &kp COMMA    &kp DOT     &kp FSLH      &none
 
-                              &lt 5 ESC  &lt 4 SPACE  &msl LSHIFT TAB                                                   &lt 2 ENTER  &lt 1 BSPC  &lt 3 DEL
+                                &lt 5 ESC  &lt 4 SPACE  &mslt LSHIFT TAB                                                     &lt 2 ENTER  &lt 1 BSPC  &lt 3 DEL
           >;
 
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
