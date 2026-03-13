@@ -145,11 +145,11 @@
         display-name = "SYM";
         bindings = <
 
-          &none &kp LBRC  &kp AMPS &kp ASTRK &kp LPAR  &kp RBRC                 &trans          &none &none      &none     &none    &none    &none
-          &none &kp SEMI  &kp DLLR &kp PRCNT &kp CARET &kp EQUAL         &trans &trans &trans   &none &kp RSHIFT &kp RCTRL &kp RALT &kp RGUI &none
-          &none &kp GRAVE &kp EXCL &kp AT    &kp HASH  &kp BSLH    &trans       &trans          &none &none      &none     &none    &none    &none
+          &none &kp LBRC  &kp AMPS &kp ASTRK &kp LPAR  &kp RBRC                 &trans         &none &none      &none     &none    &none    &none
+          &none &kp COLON &kp DLLR &kp PRCNT &kp CARET &kp PLUS         &trans &trans &trans   &none &kp RSHIFT &kp RCTRL &kp RALT &kp RGUI &none
+          &none &kp TILDE &kp EXCL &kp AT    &kp HASH  &kp PIPE    &trans       &trans         &none &none      &none     &none    &none    &none
 
-                                      &kp DOT &kp RPAR &kp MINUS                                &none  &none  &none
+                                      &kp DOT &kp RPAR &kp MINUS                               &none  &none  &none
           >;
 
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
