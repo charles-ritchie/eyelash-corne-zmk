@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - $$mdi:apple-keyboard-caps$$
+  - '&caps_mac'
   - RGB
   - {t: A, h: LGUI}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
